@@ -114,3 +114,16 @@ for (var i = 1; i < finances.length; i++) {
     theAverage = theAverage.toFixed(2);
 }
 console.log("Average Change: $" + theAverage);
+
+// The greatest increase in profits (date and amount) over the entire period.
+var greatestIncrease = 0;
+var greatestDate = "";
+
+for (i = 0; i < finances.length - 1; i++) {
+    var financesRow = finances[i][1];
+    if (greatestIncrease < finances[i][1]) {
+        greatestIncrease = finances[i][1];
+        greatestDate = finances[i]
+    }
+}
+console.log("Greatest Increase in Profits: " + greatestDate);
